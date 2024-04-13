@@ -8,7 +8,7 @@ import { auth } from "../firebase.config";
 const App = () => {
   const [user] = useAuthState(auth);
   return (
-    <>
+    <div >
       <Toaster />
       <Routes>
         {user ? (
@@ -20,7 +20,7 @@ const App = () => {
           </>
         )}
       </Routes>
-    </>
+    </div>
   );
 };
 

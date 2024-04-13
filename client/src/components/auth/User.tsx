@@ -15,6 +15,7 @@ import { signOut } from "firebase/auth";
 import { toast } from "../ui/use-toast";
 import { useNavigate } from "react-router-dom";
 import { ToastAction } from "../ui/toast";
+
 const User = () => {
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
